@@ -55,19 +55,19 @@ export default function Hero() {
             <SceneContent />
 
             <Scroll html>
-              <div style={{ width: '100vw', color: 'white', fontFamily: 'Arial, sans-serif' }}>
+              <div className="w-screen text-white">
                 
-                <section style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '0 10%' }}>
-                  <h1 style={{ fontSize: '5vw', margin: 0 }}>India's #1 Performance</h1>
-                  <h2 style={{ fontSize: '3vw', color: '#666' }}>Digital Marketing Agency</h2>
+                <section className="h-screen flex flex-col justify-center px-[10%]">
+                  <h1 className="text-[5vw] m-0">India's #1 Performance</h1>
+                  <h2 className="text-[3vw] text-gray-500">Digital Marketing Agency</h2>
                 </section>
                 
-                <section style={{ height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-end', padding: '0 10%' }}>
-                  <h1 style={{ fontSize: '4vw', textAlign: 'right' }}>We Don't Just Market.<br/><span style={{color: '#0070f3'}}>We Multiply.</span></h1>
+                <section className="h-screen flex flex-col justify-center items-end px-[10%]">
+                  <h1 className="text-[4vw] text-right">We Don't Just Market.<br/><span className="text-[#0070f3]">We Multiply.</span></h1>
                 </section>
 
-                <section style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <p style={{ maxWidth: '600px', textAlign: 'center', fontSize: '1.5rem' }}>
+                <section className="h-screen flex items-center justify-center">
+                  <p className="max-w-[600px] text-center text-[1.5rem]">
                     Founder-led boutique agency helping ambitious brands achieve measurable growth.
                   </p>
                 </section>
