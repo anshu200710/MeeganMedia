@@ -54,12 +54,12 @@ const About = () => {
             <h3 className="text-[3vw] leading-[1.6] text-gray-500 mb-4">Impact in Numbers</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-gray-900/40 p-6 rounded-lg text-center">
-                <div className="text-[2rem] font-bold">150+</div>
+                <div className="text-[2rem] font-bold">100+</div>
                 <div className="text-[1.4rem] text-gray-300">Clients</div>
               </div>
 
               <div className="bg-gray-900/40 p-6 rounded-lg text-center">
-                <div className="text-[2rem] font-bold">1200%</div>
+                <div className="text-[2rem] font-bold">7x</div>
                 <div className="text-[1.4rem] text-gray-300">Avg. ROI Increase</div>
               </div>
 
