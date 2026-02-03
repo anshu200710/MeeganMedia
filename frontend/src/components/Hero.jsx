@@ -6,8 +6,7 @@ import {
   Environment, 
   ScrollControls, 
   Scroll,
-  useScroll,
-  MeshTransmissionMaterial
+  useScroll
 } from '@react-three/drei'
 import * as THREE from 'three'
 
@@ -31,11 +30,12 @@ function SceneContent() {
       {/* This Box acts as a placeholder for your .glb model */}
       <mesh ref={meshRef}>
         <torusKnotGeometry args={[1, 0.3, 128, 32]} />
-        <MeshTransmissionMaterial 
-          thickness={0.5} 
-          anisotropy={0.1} 
-          chromaticAberration={0.04} 
-          color="#ffffff" 
+        <meshStandardMaterial
+          color="#0c1a6700"
+         
+          emissiveIntensity={0.35}
+          metalness={0.1}
+          roughness={0.45}
         />
       </mesh>
     </Float>
@@ -44,7 +44,7 @@ function SceneContent() {
 
 export default function Hero() {
   return (
-    <div style={{ height: '100vh', width: '100vw', background: '#050505' }}>
+    <div style={{ height: '100vh', width: '100vw', background: 'linear-gradient(135deg, #f8fafc 0%, #e6eefc 100%)', color: '#0f172a' }}>
       <Canvas shadows>
         <PerspectiveCamera makeDefault position={[0, 0, 5]} fov={50} />
         <Environment preset="city" />
@@ -55,11 +55,11 @@ export default function Hero() {
             <SceneContent />
 
             <Scroll html>
-              <div className="w-screen text-white">
+              <div className="w-screen text-[#0f172a]">
                 
                 <section className="h-screen flex flex-col justify-center px-[10%]">
                   <h1 className="text-[5vw] m-0">India's #1 Performance</h1>
-                  <h2 className="text-[3vw] text-gray-500">Digital Marketing Agency</h2>
+                  <h2 className="text-[3vw] text-gray-600">Digital Marketing Agency</h2>
                 </section>
                 
                 <section className="h-screen flex flex-col justify-center items-end px-[10%]">
